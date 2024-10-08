@@ -1,0 +1,10 @@
+{
+	"folders": [],
+	"settings": {
+		"files.associations": {
+			"cstdarg": "cpp",
+			"cstdio": "cpp"
+		},
+		"git.ignoreLimitWarning": true
+	}
+}
