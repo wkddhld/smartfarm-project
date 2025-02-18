@@ -4,29 +4,6 @@
 
 -    집안 어디에서나 쉽게 식물을 키울 수 있으며, 웹을 이용하여 모니터링이 가능한 가정용 농장
 
-## 프로젝트 파일 구조
-```|-- include/           # 헤더 파일 모음
-|   |-- config.h       # 각 기기의 핀 설정 및 MQTT 서버 주소 정의
-|   |-- network.h      # 네트워크 관련 기능 선언
-|   |-- saferanges.h   # 범위 안전성 검사 관련 함수 선언
-|   |-- sensors.h      # 센서 데이터 처리 관련 함수 선언
-|
-|-- src/               # 소스 코드 모음
-|   |-- callback.cpp   # 콜백 함수 정의
-|   |-- main.cpp       # 메인 실행 파일
-|   |-- network.cpp    # AP모드 관리와 mqtt 연결 기능 구현
-|   |-- pub.cpp        # MQTT Publish 기능 구현
-|   |-- saferanges.cpp # 안전 범위 계산 및 spiffs 파일
-|   |-- sensors.cpp    # 측정센서 데이터 처리 구현
-|   |-- sub.cpp        # MQTT Subscribe 기능 구현
-|
-|
-|-- .env               # 환경 변수 파일 (.gitignore에 추가 필요)
-|-- platform.ini       # PlatformIO 설정 파일
-|-- .gitignore         # Git에 포함하지 않을 파일 목록
-|-- project.md         # 프로젝트 설명 파일
-|-- file.md             # 파일 구조 설명 MD```
-
 
 ## 🪄 기술 스택
 
@@ -127,6 +104,28 @@ void loop() {
   }
 }
 
+```## 프로젝트 파일 구조
+|-- include/           # 헤더 파일 모음
+|   |-- config.h       # 각 기기의 핀 설정 및 MQTT 서버 주소 정의
+|   |-- network.h      # 네트워크 관련 기능 선언
+|   |-- saferanges.h   # 범위 안전성 검사 관련 함수 선언
+|   |-- sensors.h      # 센서 데이터 처리 관련 함수 선언
+|
+|-- src/               # 소스 코드 모음
+|   |-- callback.cpp   # 콜백 함수 정의
+|   |-- main.cpp       # 메인 실행 파일
+|   |-- network.cpp    # AP모드 관리와 mqtt 연결 기능 구현
+|   |-- pub.cpp        # MQTT Publish 기능 구현
+|   |-- saferanges.cpp # 안전 범위 계산 및 spiffs 파일
+|   |-- sensors.cpp    # 측정센서 데이터 처리 구현
+|   |-- sub.cpp        # MQTT Subscribe 기능 구현
+|
+|
+|-- .env               # 환경 변수 파일 (.gitignore에 추가 필요)
+|-- platform.ini       # PlatformIO 설정 파일
+|-- .gitignore         # Git에 포함하지 않을 파일 목록
+|-- project.md         # 프로젝트 설명 파일
+|-- file.md             # 파일 구조 설명 MD```
 
 
 
